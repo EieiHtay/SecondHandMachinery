@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMasterPage.master.cs" Inherits="User_UserMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Zaygo City</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="icon" href="../Images/zaygo.png" type="Images/x-icon" />
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="../bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>
+
+</head>
+<body>
+   
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="navbar">
+            <img src="../Images/zaygo.png" width="70" height="70" alt="" data-aos="fade-right">
+            <a class="navbar-brand" href="#app" data-aos="fade-right" style="color:#fff; font-weight:bold;">Zaygo City</a>
+            <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto" data-aos="fade-right">
+                      <span id="boot-icon" class="bi bi-cart-plus" style="font-size: 20px; color: rgb(255, 255, 255); opacity: 1; border: 1.6px outset rgb(0, 0, 128); border-radius: 100%; padding: 5px 10px; background-color: rgb(0, 0, 128);"></span>
+
+                <li class="nav-item active">
+                  <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#menu">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">Order List</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#feedback">Product List (Download)</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                   <i class="fa-solid fa-cart-shopping"></i>
+              </ul>
+              <%--<form class="form-inline my-2 my-lg-0" data-aos="fade-left">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>--%>
+
+            </div>
+        </nav>
+        <form id="form2" runat="server">
+        <div>
+             <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+          
+             </asp:ContentPlaceHolder>
+         </div>
+        </form>
+        <!-- Footer Session Start -->
+        <div class=" container-fluid bg-dark border-top" style="padding-top:100px;" id="footerSection">
+          <div class="container pb-4">
+              <div class="row text-white-50">
+                <div class="col-lg-4 col-md-4 col-sm-12 mb-4" data-aos="fade-up-right">
+             
+                  <img src="../Images/zaygo.png" class="w-25"><br>
+                     <p class="text-white">ကျွန်တော်တို့ Zaygo City မှာဆိုရင် လူကြီးမင်းတို့ အိမ်မှာ အသုံးမလိုတော့တဲ့ တစ်ခါသုံး စက်ပစ္စည်းများကို ပြန်လည်ရောင်းချနိုင်ပြီး မိမိတို့ အိမ်အတွက်လိုအပ်တဲ့ စက်ပစ္စည်းများကိုလည်း တစ်ပတ်ရစ် ဈေးနှုန်းများဖြင့် သက်သက်သာသာ ဝယ်ယူနိုင်ပါပြီ။</p>
+                  <i class="fa-brands fa-facebook-square fs-3 mx-2 text-white" style="cursor: pointer;"></i>
+                  <i class="fa-solid fa-square-phone-flip  fs-3 mx-2 text-white" style="cursor: pointer;"></i>
+                  <i class="fa-brands fa-twitter-square fs-3 mx-2 text-white" style="cursor: pointer;"></i>
+              </div>
+                   <div class="col-lg-4 col-md-4 col-sm-12 mb-4" data-aos="fade-up-left">
+                      <h4 class="text-white">Menu</h4>
+                      <a href="#home" class=" d-block text-decoration-none text-white-50">Home</a>
+                      <a href="#menu" class=" d-block text-decoration-none text-white-50">Product</a>
+                      <a href="#about" class=" d-block text-decoration-none text-white-50">Order List</a>
+                      <a href="#contact" class=" d-block text-decoration-none text-white-50">Product List(Download)</a>
+                  
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12 text-white" data-aos="flip-left">
+                      <h4>Social Link</h4>
+                      <p>Product</p>
+                      <p>Order List</p>
+                      <p>Product List(Download)</p>
+                  </div>
+             
+              </div>
+          </div>
+        </div>
+        <div class="footer">
+          <p class="text-white text-center">
+            Design & Develop By 
+            <img src="../Images/ee.png" alt="" style=" width:30px; height:30px;">
+            <img src="../Images/ee.png" alt="" style=" width:30px; height:30px;">
+            <img src="../Images/hh.png" alt="" style=" width:30px; height:30px;">
+        
+          </p>
+        </div>
+      <!-- Footer Session End -->
+
+</body>
+    <script src="../jquery.js"></script>
+<script src="../popper.js"></script>
+<script src="../bootstrap.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init({
+        duration: 1500
+    });
+</script>
+</html>
